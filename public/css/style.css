@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css?family=Bree+Serif&display=swap');
+body {
+    background-color: #F56B79;
+    font-family: 'Bree Serif', serif;
+    padding: 1rem;
+}
+header {
+    margin: 0.5rem;
+    background-color: white;
+    color: #F56B79;
+    border-radius: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+header a {
+    text-decoration: none;
+    color: #F56B79;
+    padding-left: 0.5rem;
+}
+header a h1 {
+    text-decoration: none;
+    font-size: 2rem;
+}
+header nav {
+    display: flex;
+    font-size: 1.2rem;
+    justify-content: space-around;
+}
+header nav a{
+    padding: 0.5rem;
+    color: #F56B79;
+    text-decoration: none;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    text-align: center;
+    width: auto;
+    background-color: #CE4150;
+    border-radius: 25px;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+.card img {
+    width: 70%;
+    padding: 1rem;
+}
+.card a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: white;
+    padding: 2rem;
+    font-weight: bold;
+}
+.detail {
+    text-align: center;
+    width: auto;
+    background-color: #CE4150;
+    border-radius: 25px;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+    padding: 50px;
+}
+
+main a {
+    text-align: center;
+}
