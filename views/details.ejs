@@ -1,4 +1,31 @@
 
 <%- include('partials/header') %>
 
+<div class="container">
+
+  <% for (let pokemon of pokemons) {%>
+    <img src="/img/<%=pokemon.numero%>.png">
+    <h2>Détails de <%= pokemon.nom%></h2>
+    <article class="details">
+        <h3>#<%=pokemon.numero%> <%=pokemon.nom%></h3>
+        <div class="badge type-<%=pokemon.name%>">
+            <%= pokemon.name%>
+        </div>
+        <div class="badge type-gentil">
+            gentil
+        </div>
+        <h4>Statistiques</h4>
+        <ul>
+            <li>PV <%= pokemon.pv%></li>
+            <li>Attaque <%= pokemon.attaque%></li>
+            <li>Défence <%= pokemon.defence%></li>
+            <li>Attaque Spé. <%= pokemon.attaque_spe%></li>
+            <li>Défense Spé. <%= pokemon.defense_spe%></li>
+            <li>Vitesse <%= pokemon.vitesse%></li>
+        </ul>
+      </article>
+  <% } %>
+  <a href="/"> Revenir à la liste</a>
+</div>
+
 <%- include('partials/footer') %> 

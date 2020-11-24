@@ -1,3 +1,11 @@
 <%- include('partials/header') %>
 
+<% for (let pokemon of pokemons) {%>
+    <article class="card">
+               
+    <img src="img/<%=pokemon.numero%>.png">
+    <a href="/pokemon/<%= pokemon.id %>">#<%=pokemon.numero%> <%=pokemon.nom%></a>
+    </article>
+<% } %>
+
 <%- include('partials/footer') %> 
