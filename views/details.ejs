@@ -1,11 +1,13 @@
 
 <%- include('partials/header') %>
 
-<div class="container">
+
 
   <% for (let pokemon of pokemons) {%>
-    <img src="/img/<%=pokemon.numero%>.png">
     <h2>Détails de <%= pokemon.nom%></h2>
+    <div class="container">
+    <img src="/img/<%=pokemon.numero%>.png">
+    
     <article class="details">
         <h3>#<%=pokemon.numero%> <%=pokemon.nom%></h3>
         <div class="badge type-<%=pokemon.name%>">
@@ -24,8 +26,9 @@
             <li>Vitesse <%= pokemon.vitesse%></li>
         </ul>
       </article>
+    </div>
   <% } %>
   <a href="/"> Revenir à la liste</a>
-</div>
+
 
 <%- include('partials/footer') %> 

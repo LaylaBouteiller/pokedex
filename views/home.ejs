@@ -1,5 +1,5 @@
 <%- include('partials/header') %>
-
+<div class="container">
 <% for (let pokemon of pokemons) {%>
     <article class="card">
                
@@ -7,5 +7,5 @@
     <a href="/pokemon/<%= pokemon.id %>">#<%=pokemon.numero%> <%=pokemon.nom%></a>
     </article>
 <% } %>
-
+</div>
 <%- include('partials/footer') %> 
